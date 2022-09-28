@@ -92,7 +92,7 @@ int main()
         switch(pilih){
             case 1 :
                 if(top > MAX){
-                        cout << "Sorry Stack is full" << endl;
+                        gotoxy(40,12);cout << "Sorry Stack is full" << endl;
                     }
                 else {
                     /*Menambah data baru diletakan di top*/
@@ -102,7 +102,7 @@ int main()
                 break;
             case 2 :
                 if(top == 1){
-                        cout << "Sorry Stack is empty" << endl;
+                        gotoxy(40,12);cout << "Sorry Stack is empty" << endl;
                     }
                 else { /*Menghapus Data Terakhir (top-1*/
                     popdata(top-1);
