@@ -93,6 +93,8 @@ int main()
             case 1 :
                 if(top > MAX){
                         gotoxy(40,12);cout << "Sorry Stack is full" << endl;
+                        gotoxy(40,15);cout<<"Press Any Key...";
+                        getch();
                     }
                 else {
                     /*Menambah data baru diletakan di top*/
@@ -103,6 +105,8 @@ int main()
             case 2 :
                 if(top == 1){
                         gotoxy(40,12);cout << "Sorry Stack is empty" << endl;
+                        gotoxy(40,15);cout<<"Press Any Key...";
+                        getch();
                     }
                 else { /*Menghapus Data Terakhir (top-1*/
                     popdata(top-1);
@@ -113,6 +117,8 @@ int main()
 
                 if(top == 1) {
                         cout << "Sorry stack is empty" << endl;
+                        gotoxy(40,15);cout<<"Press Any Key...";
+                        getch();
                 }
                 else {
                     /*Menampilkan Data mulai
